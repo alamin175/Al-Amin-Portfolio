@@ -3,15 +3,15 @@ const Banner = () => {
 	return (
 		<div className="h-screen">
 			<div
-				className="grid grid-cols-2 items-center mx-auto place-items-center ml-16  mr-16"
+				className="grid grid-cols-1 flex-row-reverse md:grid-cols-2 items-center mx-auto place-items-center ml-16  mr-16"
 				style={{ height: 'calc(100% - 50px' }}
 			>
-				<div>
+				<div className="order-last md:order-first">
 					<div className="border-textPrimary border-l-8 pl-3  text-white  ">
-						<h1 className="text-5xl font-bold mb-1">
+						<h1 className="text-4xl mt-8 md:mt-0 md:text-5xl font-bold mb-1">
 							MD. Al-Amin <br />
 						</h1>
-						<span className="text-xl">
+						<span className=" md:text-xl">
 							{'< Junior Frontend Developer />'}
 						</span>
 					</div>
@@ -24,7 +24,7 @@ const Banner = () => {
 						</p>
 					</div>
 
-					<button className="group relative z-10 h-14 p-3 rounded-xl ml-3 mt-10 overflow-hidden  outline outline-textPrimary text-xl font-semibold text-white">
+					<button className="group relative z-10 h-14 p-3 rounded-xl ml-3 m-10 overflow-hidden  outline outline-textPrimary text-xl font-semibold text-white">
 						<span className="absolute -inset-8 origin-left rotate-12 scale-x-0 transform bg-white transition-transform duration-700 group-hover:scale-x-100 group-hover:duration-300"></span>
 						<span className="absolute -inset-8 origin-left rotate-12 scale-x-0 transform bg-sky-700 transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-700"></span>
 						<span className="absolute -inset-8 origin-left rotate-12 scale-x-0 transform bg-sky-900 transition-transform duration-300 group-hover:scale-x-50 group-hover:duration-500"></span>
@@ -38,9 +38,9 @@ const Banner = () => {
 					className="flex items-center flex-wrap justify-around"
 					id="_ActiveAvatar_NavigateUI"
 				>
-					<div className="relative group">
+					<div className="relative group order-first md:order-last">
 						<img
-							className="size-[300px] bg-textPrimary object-cover rounded-full"
+							className="size-[200px] md:size-[300px] bg-textPrimary object-cover rounded-full"
 							src={myImage}
 							alt="avatar navigate ui"
 						/>
