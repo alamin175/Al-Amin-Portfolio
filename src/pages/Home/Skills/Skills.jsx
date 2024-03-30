@@ -10,7 +10,7 @@ import {
 import { TbBrandFramerMotion } from 'react-icons/tb'
 import tanstackImg from '../../../assets/images/tanstack-query.JPG'
 
-import { FaBootstrap, FaHtml5, FaNode, FaReact } from 'react-icons/fa'
+import { FaBootstrap, FaHtml5, FaNode } from 'react-icons/fa'
 
 const Skills = () => {
 	return (

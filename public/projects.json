@@ -1,0 +1,47 @@
+[
+	{
+		"name": "GoFast Courier",
+		"id": 1,
+		"image": "/src/assets/images/project-1.JPG",
+		"allImage": [
+			"/src/assets/images/project-1.JPG",
+			"/src/assets/images/project-1-1.JPG",
+			"/src/assets/images/project-1-2.JPG",
+			"/src/assets/images/project-1-3.JPG",
+			"/src/assets/images/project-1-4.JPG",
+			"/src/assets/images/project-1-5.JPG",
+			"/src/assets/images/project-1-6.JPG",
+			"/src/assets/images/project-1-7.JPG",
+			"/src/assets/images/project-1-8.JPG"
+		],
+		"title": "This is parcel management website project.",
+		"details": "This project is only created for practice. It's a parcel management website. User can login, create an order for courier, can update any parcel. The project has also client side and server side. Also admin and user side. Admin can assign rider for pick up parcel, can see all user details, parcel details. ",
+		"link": "https://gofast-courier.web.app",
+		"github": "https://github.com/alamin175/gofast-courier",
+		"technology": [
+			"React js, Swiper js, Tailwind CSS, Daisy Ui, React Helmet, Express Js, Mongo DB, Firebase, Axios, JWT"
+		]
+	},
+	{
+		"name": "Dental Doctor House",
+		"id": 2,
+		"image": "/src/assets/images/project-2.JPG",
+		"allImage": [
+			"/src/assets/images/project-2.JPG",
+			"/src/assets/images/project-2-1.JPG",
+			"/src/assets/images/project-2-2.JPG",
+			"/src/assets/images/project-2-3.JPG",
+			"/src/assets/images/project-2-4.JPG",
+			"/src/assets/images/project-2-5.JPG",
+			"/src/assets/images/project-2-6.JPG",
+			"/src/assets/images/project-2-7.JPG"
+		],
+		"title": "This is a dental doctor's website.",
+		"details": "The project is about dental doctor. Patient can visit all doctor's details and book a date for visit. There are a lot of service. Also has admin dashboard and user dashboard. Also has mongo db database. ",
+		"link": "https://dental-doctor-house.web.app",
+		"github": "https://github.com/alamin175/dental-doctor-house",
+		"technology": [
+			"React js, Tanstack Query, Axios, Firebase, Express js, Mongo DB, JWT, React Helmet"
+		]
+	}
+]
