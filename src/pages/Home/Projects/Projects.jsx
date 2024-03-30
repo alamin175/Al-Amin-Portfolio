@@ -12,7 +12,7 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div className="mb-20">
+		<div className="my-20">
 			<SectionTitle title="Projects" />
 
 			{/* Project Card */}
