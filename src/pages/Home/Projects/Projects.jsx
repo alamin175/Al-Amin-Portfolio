@@ -1,5 +1,4 @@
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
-import img1 from '../../../assets/images/project-1.JPG'
 import { useEffect, useState } from 'react'
 import { FaGithub, FaLink } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -18,7 +17,7 @@ const Projects = () => {
 
 			{/* Project Card */}
 
-			<div className="grid grid-cols-2 place-items-center">
+			<div className="grid md:grid-cols-2 gap-10 lg:gap-0 place-items-center">
 				{projects.map(project => (
 					<div
 						key={project.id}

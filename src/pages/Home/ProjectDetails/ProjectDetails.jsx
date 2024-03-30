@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 const ProjectDetails = () => {
 	const project = useLoaderData()
-	console.log(project.allImage)
+	// console.log(project.allImage)
 
 	const [currentSlider, setCurrentSlider] = useState(0)
 	const carouselImages = project.allImage
@@ -28,8 +28,8 @@ const ProjectDetails = () => {
 	}, [nextSlider])
 
 	return (
-		<div className="mt-2 ">
-			<div className="h-60 w-2/3 mx-auto md:h-[470px] lg:h-2/3 relative overflow-hidden">
+		<div className="mt-2 mb-16">
+			<div className=" md:w-2/3 mx-auto md:h-2/3 relative overflow-hidden">
 				{/* arrow left */}
 				<button
 					onClick={prevSlider}
@@ -109,47 +109,41 @@ const ProjectDetails = () => {
 					))}
 				</div>
 			</div>
-			<div className="">
-				<h1 className="text-5xl mx-8 mb-6 border-l-8 border-textPrimary p-4 font-bold text-white">
+			<div>
+				<h1 className="text-4xl md:text-5xl mx-4 md:mx-8 mb-6 border-l-8 border-textPrimary p-4 font-bold text-white">
 					Project Details
 				</h1>
-				<div className="ml-16 text-xl  font-serif">
-					<h1 className="text-gray-400 mb-4 flex">
-						<span className="w-44">Project Name</span>
-						<span className="text-textPrimary">{project.name}</span>
-					</h1>
-					<h1 className="text-gray-400 mb-4 flex">
-						<span className="w-44">Project Title</span>
-						<span className="text-textPrimary">{project.title}</span>
-					</h1>
-					<h1 className="text-gray-400 mb-4 flex">
-						<span className="w-44">About Project</span>
-						<span className="text-textPrimary max-w-[60ch]">
+				<div className="mx-4 md:mx-16 gap-x-4 md:text-xl font-serif">
+					<div className="grid grid-cols-12 gap-4 text-gray-400 mb-4 ">
+						<div className="col-span-3">Project Name</div>
+						<div className="text-textPrimary  col-span-9">
+							{project.name}
+						</div>
+						<div className="col-span-3">Project Title</div>
+						<div className="text-textPrimary  col-span-9">
+							{project.title}
+						</div>
+						<div className="col-span-3">About Project</div>
+						<div className="text-textPrimary  col-span-9">
 							{project.details}
-						</span>
-					</h1>
-					<h1 className="text-gray-400 mb-4 flex">
-						<span className="w-44">Technology Used</span>
-						<span className="text-textPrimary max-w-[60ch]">
+						</div>
+						<div className="col-span-3">Technology Used</div>
+						<div className="text-textPrimary  col-span-9">
 							{project.technology}
-						</span>
-					</h1>
-					<h1 className="text-gray-400 mb-6 flex">
-						<span className="w-44">Live Site Link</span>
-						<a href={project.link} target="blank">
-							<span className="text-textPrimary underline underline-offset-8">
+						</div>
+						<div className="col-span-3">Live Site Link</div>
+						<div className="text-textPrimary underline underline-offset-8 col-span-9">
+							<a href={project.link} target="blank">
 								{project.link}
-							</span>
-						</a>
-					</h1>
-					<h1 className="text-gray-400 mb-4 flex">
-						<span className="w-44">Github Repository</span>
-						<a href={project.github} target="blank">
-							<span className="text-textPrimary underline underline-offset-8">
+							</a>
+						</div>
+						<div className="col-span-3">Github Repository Link</div>
+						<div className="text-textPrimary underline underline-offset-8 col-span-9">
+							<a href={project.github} target="blank">
 								{project.github}
-							</span>
-						</a>
-					</h1>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

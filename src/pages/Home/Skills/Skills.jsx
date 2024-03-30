@@ -10,13 +10,13 @@ import {
 import { TbBrandFramerMotion } from 'react-icons/tb'
 import tanstackImg from '../../../assets/images/tanstack-query.JPG'
 
-import { FaBootstrap, FaHtml5, FaNode } from 'react-icons/fa'
+import { FaBootstrap, FaHtml5, FaNode, FaReact } from 'react-icons/fa'
 
 const Skills = () => {
 	return (
-		<div className="h-screen">
+		<div className="lg:h-screen">
 			<SectionTitle title="Skills"></SectionTitle>
-			<div className="text-white grid grid-cols-3 mt-24 items-center place-items-center gap-10">
+			<div className="text-white grid grid-cols-1 lg:grid-cols-3 mt-24 ml-10 lg:ml-0 items-center md:place-items-center gap-10">
 				<div>
 					<div className="my-3">
 						<h1 className="flex  items-center gap-5 text-2xl">
@@ -56,6 +56,12 @@ const Skills = () => {
 							Axios
 						</h1>
 					</div>
+					<div className="my-4">
+						<h1 className="flex items-center gap-5 text-2xl">
+							<FaReact className="text-4xl text-blue-400" />
+							React Js
+						</h1>
+					</div>
 					<div className="my-3">
 						<h1 className="flex  items-center gap-5 text-2xl">
 							<FaNode className="text-4xl text-green-500" />
@@ -68,16 +74,11 @@ const Skills = () => {
 							Express Js
 						</h1>
 					</div>
+
 					<div className="my-3">
 						<h1 className="flex items-center gap-5 ml-2 text-2xl">
 							<img className="w-7" src={tanstackImg} alt="" />
 							Tanstack Query
-						</h1>
-					</div>
-					<div className="my-4">
-						<h1 className="flex items-center gap-5 text-2xl">
-							<TbBrandFramerMotion className="text-4xl text-black bg-white" />
-							Framer Motion
 						</h1>
 					</div>
 				</div>
@@ -92,6 +93,12 @@ const Skills = () => {
 						<h1 className="flex  items-center gap-5 text-2xl">
 							<SiFirebase className="text-4xl text-yellow-500" />
 							Firebase
+						</h1>
+					</div>
+					<div className="my-4">
+						<h1 className="flex items-center gap-5 text-2xl">
+							<TbBrandFramerMotion className="text-4xl text-black bg-white" />
+							Framer Motion
 						</h1>
 					</div>
 				</div>
