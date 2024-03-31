@@ -1,4 +1,4 @@
-import myImage from '../../../assets/images/IMG-20220801-WA0003-transformed-removebg-preview.png'
+import myImage from '../../../../public/assets/images/user-vector/alamin.png'
 
 const Banner = () => {
 	return (

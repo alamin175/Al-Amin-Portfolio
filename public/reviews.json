@@ -2,36 +2,36 @@
 	{
 		"name": "John Doe",
 		"id": 1,
-		"location": "Dhaka",
-		"image": "/src/assets/images/user-vector/user-1.png",
+		"location": "Dhaka ",
+		"image": "/assets/images/user-vector/user-1.png",
 		"details": "Great work capablity is more enough to get success. Work hard and reach at your goal. This is the only way to more professional."
 	},
 	{
 		"name": "Raphael Pablo",
 		"id": 2,
 		"location": "America",
-		"image": "/src/assets/images/user-vector/user-2.png",
+		"image": "/assets/images/user-vector/user-2.png",
 		"details": "Fantastic communication skill is more than a reach kid. The communication skill is the key to be smart. So decision is yours"
 	},
 	{
 		"name": "Alex Johnson",
 		"id": 3,
 		"location": "Kashmir",
-		"image": "/src/assets/images/user-vector/user-3.png",
+		"image": "/assets/images/user-vector/user-3.png",
 		"details": "Nothing is possible without hard work. Work hard and get the success. Try to work smartly to stay on top."
 	},
 	{
 		"name": "Emily Davis",
 		"id": 4,
 		"location": "Sylhet",
-		"image": "/src/assets/images/user-vector/user-4.png",
+		"image": "/assets/images/user-vector/user-4.png",
 		"details": "Portfolio is most important for every single person. Because it is the way to find your skill and get more details about you."
 	},
 	{
 		"name": "Michael Wilson",
 		"id": 5,
 		"location": "Rangamati",
-		"image": "/src/assets/images/user-vector/user-5.png",
+		"image": "/assets/images/user-vector/user-5.png",
 		"details": "Sometimes you will fall down. But don't stop your work rather will fall down more. Keep your work with mentally ."
 	}
 ]

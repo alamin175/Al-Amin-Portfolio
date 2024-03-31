@@ -1,5 +1,5 @@
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
-import table from '../../../assets/images/education.jpg'
+import table from '../../../../public/assets/images/skill-image/education.jpg'
 import { FaGraduationCap } from 'react-icons/fa'
 
 const Education = () => {

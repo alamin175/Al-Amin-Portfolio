@@ -8,7 +8,7 @@ import {
 	SiTailwindcss,
 } from 'react-icons/si'
 import { TbBrandFramerMotion } from 'react-icons/tb'
-import tanstackImg from '../../../assets/images/tanstack-query.JPG'
+import tanstackImg from '../../../../public/assets/images/skill-image/tanstack-query.JPG'
 
 import { FaBootstrap, FaHtml5, FaNode, FaReact } from 'react-icons/fa'
 
