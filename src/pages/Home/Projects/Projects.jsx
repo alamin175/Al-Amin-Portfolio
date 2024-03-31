@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
 	const [projects, setProjects] = useState([])
+	const [showAll, setShowAll] = useState(false)
+	const projectsToShow = showAll ? showAll.length : 2
+
 	useEffect(() => {
 		fetch('projects.json')
 			.then(res => res.json())
@@ -21,7 +24,7 @@ const Projects = () => {
 				className="grid md:grid-cols-2 gap-10 lg:gap-0 place-items-center "
 				data-aos="zoom-in"
 			>
-				{projects.map(project => (
+				{projects.slice(0, projectsToShow).map(project => (
 					<div
 						key={project.id}
 						className="px-6 py-6 relative max-w-[350px] text-white shadow bg-gradient-to-r overflow-hidden rounded-xl from-emerald-300 to-emerald-600 group mb-20"
@@ -92,6 +95,14 @@ const Projects = () => {
 					</div>
 				))}
 			</div>
+			{projects.length > 2 && (
+				<button
+					className="text-center flex  mx-auto border-4 border-emerald-400 text-textPrimary font-bold p-4 rounded-xl hover:bg-emerald-400 hover:text-textSecondary"
+					onClick={() => setShowAll(!showAll)}
+				>
+					{showAll ? 'Hide Some Projects' : 'Show All Projects'}
+				</button>
+			)}
 		</div>
 	)
 }

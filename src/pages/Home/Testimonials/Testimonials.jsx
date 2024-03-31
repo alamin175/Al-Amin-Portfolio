@@ -13,7 +13,7 @@ const Testimonials = () => {
 
 	return (
 		<div className="h-screen">
-			<SectionTitle title="Testimonials" />
+			<SectionTitle title="Testimonials" className="mt-32" />
 			<div>
 				<Marquee>
 					{reviews.map(review => (

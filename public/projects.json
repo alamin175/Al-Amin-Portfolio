@@ -43,5 +43,22 @@
 		"technology": [
 			"React js, Tanstack Query, Axios, Firebase, Express js, Mongo DB, JWT, React Helmet"
 		]
+	},
+	{
+		"name": "iRepair",
+		"id": 3,
+		"image": "/src/assets/images/project-3.JPG",
+		"allImage": [
+			"/src/assets/images/project-3.JPG",
+			"/src/assets/images/project-3-1.JPG",
+			"/src/assets/images/project-3-2.JPG",
+			"/src/assets/images/project-3-3.JPG",
+			"/src/assets/images/project-3-4.JPG"
+		],
+		"title": "This is a Practice Project by using Framer Motion",
+		"details": "The project is about practice with framer motion. There are some animation included and also animation effect add based on scrolling the page. ",
+		"link": "https://i-repair-kappa.vercel.app",
+		"github": "https://github.com/alamin175/iRepair",
+		"technology": ["React js, Framer Motion, Tailwind CSS, React Router"]
 	}
 ]

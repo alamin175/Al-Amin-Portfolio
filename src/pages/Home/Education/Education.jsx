@@ -11,6 +11,7 @@ const Education = () => {
 					<div
 						className="flex items-center gap-4 bg-textPrimary text-textSecondary  p-2 md:p-8 rounded-3xl hover:bg-emerald-300 mb-6 mx-2 lg:mx-4"
 						data-aos="fade-right"
+						data-aos-anchor-placement="bottom-bottom"
 					>
 						<FaGraduationCap className="text-5xl" />
 						<div>
@@ -24,7 +25,8 @@ const Education = () => {
 					<div
 						className="flex mx-2 lg:mx-4 items-center gap-4 bg-textPrimary text-textSecondary p-2 md:px-8 md:py-5 rounded-3xl hover:bg-emerald-300"
 						data-aos="fade-right"
-						data-aos-delay="150"
+						data-aos-anchor-placement="bottom-bottom"
+						data-aos-delay="200"
 					>
 						<FaGraduationCap className="text-5xl" />
 						<div>

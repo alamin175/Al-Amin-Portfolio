@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
@@ -26,8 +26,6 @@ Aos.init({
 	mirror: false, // whether elements should animate out while scrolling past them
 	anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 })
-
-Aos.refresh()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
