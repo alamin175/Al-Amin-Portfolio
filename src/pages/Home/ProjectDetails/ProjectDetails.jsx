@@ -28,7 +28,7 @@ const ProjectDetails = () => {
 	}, [nextSlider])
 
 	return (
-		<div className="mt-2 mb-16">
+		<div className="mt-2 mb-20">
 			<div className=" md:w-2/3 mx-auto md:h-2/3 relative overflow-hidden">
 				{/* arrow left */}
 				<button

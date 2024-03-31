@@ -4,11 +4,14 @@ import { FaGraduationCap } from 'react-icons/fa'
 
 const Education = () => {
 	return (
-		<div className="mb-16 ">
+		<div className="h-screen mt-20 mb-16 ">
 			<SectionTitle title="Education" />
 			<div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10  mx-auto">
 				<div className="my-4">
-					<div className="flex items-center gap-4 bg-textPrimary text-textSecondary  p-2 md:p-8 rounded-3xl hover:bg-emerald-300 mb-6 mx-2 lg:mx-4">
+					<div
+						className="flex items-center gap-4 bg-textPrimary text-textSecondary  p-2 md:p-8 rounded-3xl hover:bg-emerald-300 mb-6 mx-2 lg:mx-4"
+						data-aos="fade-right"
+					>
 						<FaGraduationCap className="text-5xl" />
 						<div>
 							<h1 className="text-2xl md:text-4xl font-bold">
@@ -18,7 +21,11 @@ const Education = () => {
 							<p>Institute: Badda High School</p>
 						</div>
 					</div>
-					<div className="flex mx-2 lg:mx-4 items-center gap-4 bg-textPrimary text-textSecondary p-2 md:px-8 md:py-5 rounded-3xl hover:bg-emerald-300">
+					<div
+						className="flex mx-2 lg:mx-4 items-center gap-4 bg-textPrimary text-textSecondary p-2 md:px-8 md:py-5 rounded-3xl hover:bg-emerald-300"
+						data-aos="fade-right"
+						data-aos-delay="150"
+					>
 						<FaGraduationCap className="text-5xl" />
 						<div>
 							<h1 className="text-2xl md:text-4xl font-bold">

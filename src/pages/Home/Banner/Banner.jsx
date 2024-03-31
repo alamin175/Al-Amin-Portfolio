@@ -1,4 +1,5 @@
 import myImage from '../../../assets/images/IMG-20220801-WA0003-transformed-removebg-preview.png'
+
 const Banner = () => {
 	return (
 		<div className="h-screen">
@@ -6,7 +7,10 @@ const Banner = () => {
 				className="grid grid-cols-1 flex-row-reverse md:grid-cols-2 items-center mx-auto place-items-center ml-16  mr-16"
 				style={{ height: 'calc(100% - 50px' }}
 			>
-				<div className="order-last md:order-first">
+				<div
+					className="order-last md:order-first"
+					data-aos="fade-down-right"
+				>
 					<div className="border-textPrimary border-l-8 pl-3  text-white  ">
 						<h1 className="text-4xl mt-8 md:mt-0 md:text-5xl font-bold mb-1">
 							MD. Al-Amin <br />
@@ -38,7 +42,10 @@ const Banner = () => {
 					className="flex items-center flex-wrap justify-around"
 					id="_ActiveAvatar_NavigateUI"
 				>
-					<div className="relative group order-first md:order-last">
+					<div
+						className="relative group order-first md:order-last"
+						data-aos="fade-down-left"
+					>
 						<img
 							className="size-[200px] md:size-[300px] bg-textPrimary object-cover rounded-full"
 							src={myImage}

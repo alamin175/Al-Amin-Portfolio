@@ -12,7 +12,7 @@ const Testimonials = () => {
 	}, [])
 
 	return (
-		<div>
+		<div className="h-screen">
 			<SectionTitle title="Testimonials" />
 			<div>
 				<Marquee>

@@ -12,16 +12,19 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div className="my-20">
+		<div className="lg:h-full my-20">
 			<SectionTitle title="Projects" />
 
 			{/* Project Card */}
 
-			<div className="grid md:grid-cols-2 gap-10 lg:gap-0 place-items-center">
+			<div
+				className="grid md:grid-cols-2 gap-10 lg:gap-0 place-items-center "
+				data-aos="zoom-in"
+			>
 				{projects.map(project => (
 					<div
 						key={project.id}
-						className="px-6 py-6 relative max-w-[350px] text-white shadow bg-gradient-to-r overflow-hidden rounded-xl from-emerald-300 to-emerald-600 group "
+						className="px-6 py-6 relative max-w-[350px] text-white shadow bg-gradient-to-r overflow-hidden rounded-xl from-emerald-300 to-emerald-600 group mb-20"
 					>
 						<span className="h-[200px] duration-300 group-hover:blur-sm group-hover:top-[-5%] absolute rounded-full w-[200px] bg-gradient-to-r top-[60%] left-[-40%] z-10  from-emerald-800  to-emerald-100"></span>
 						<span className="h-[200px] absolute rounded-full w-[200px] bg-gradient-to-tr  top-[-5%] right-[-40%] z-10 duration-300 group-hover:blur-sm group-hover:top-[60%] from-emerald-900 to-emerald-200"></span>
