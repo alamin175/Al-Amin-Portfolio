@@ -28,7 +28,7 @@ const ProjectDetails = () => {
 	}, [nextSlider])
 
 	return (
-		<div className="mt-2 mb-20">
+		<div id="project-details">
 			<div className=" md:w-2/3 mx-auto md:h-2/3 relative overflow-hidden">
 				{/* arrow left */}
 				<button
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
 						<img
 							key={slide}
 							src={slide}
-							className="min-w-full h-full bg-black/20 object-cover"
+							className="min-w-full h-full object-cover"
 							alt={`Slider - ${inx + 1}`}
 						/>
 					))}

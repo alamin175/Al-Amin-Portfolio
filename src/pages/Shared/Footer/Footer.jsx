@@ -14,14 +14,14 @@ import SectionTitle from '../../../components/SectionTitle/SectionTitle'
 const Footer = () => {
 	return (
 		<div
-			style={{
-				backgroundImage: `url(${footerimg})`,
-				backgroundSize: 'cover',
-				height: 'fit-content',
-			}}
-			className="md:mt-20 w-full pb-10"
+			// style={{
+			// 	backgroundImage: `url(${footerimg})`,
+			// 	backgroundSize: 'cover',
+			// 	height: 'fit-content',
+			// }}
+			className="md:mt-20 w-full pb-4"
 		>
-			<div className="pt-6 ">
+			<div id="contacts" className="pt-6 ">
 				<SectionTitle title="Find Me" />
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 place-items-center -mt-16 gap-10 md:gap-20 mx-6">
 					{/* Contact form */}
@@ -83,6 +83,11 @@ const Footer = () => {
 						</span>
 					</div>
 				</div>
+			</div>
+
+			{/* copyright text */}
+			<div className="text-center text-gray-400">
+				<h1>@Copyright reserved by Md. Al-Amin </h1>
 			</div>
 		</div>
 	)

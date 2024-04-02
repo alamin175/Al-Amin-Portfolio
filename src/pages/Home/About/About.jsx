@@ -2,7 +2,7 @@ import SectionTitle from '../../../components/SectionTitle/SectionTitle'
 
 const About = () => {
 	return (
-		<div className="md:h-screen">
+		<div id="about" className="md:h-screen">
 			<SectionTitle title="My Details"></SectionTitle>
 			<div
 				className="m-5 md:m-20 border font-mono shadow-lg shadow-textPrimary  border-textPrimary text-gray-400 p-4 md:p-8  mb-24 rounded-lg text-lg"

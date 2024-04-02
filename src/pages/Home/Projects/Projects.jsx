@@ -15,7 +15,7 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div className="lg:h-full my-20">
+		<div id="projects" className="lg:h-full my-20">
 			<SectionTitle title="Projects" />
 
 			{/* Project Card */}
@@ -31,8 +31,12 @@ const Projects = () => {
 					>
 						<span className="h-[200px] duration-300 group-hover:blur-sm group-hover:top-[-5%] absolute rounded-full w-[200px] bg-gradient-to-r top-[60%] left-[-40%] z-10  from-emerald-800  to-emerald-100"></span>
 						<span className="h-[200px] absolute rounded-full w-[200px] bg-gradient-to-tr  top-[-5%] right-[-40%] z-10 duration-300 group-hover:blur-sm group-hover:top-[60%] from-emerald-900 to-emerald-200"></span>
-						<div className="space-y-6 z-20  text-[#00203F] relative">
-							<img className="rounded-xl" src={project.image} alt="" />
+						<div className="space-y-6 z-20 text-[#00203F] relative">
+							<img
+								className="rounded-xl border-textSecondary border-2 shadow-lg shadow-emerald-200 "
+								src={project.image}
+								alt=""
+							/>
 							<h1 className="text-2xl font-bold ">{project.name}</h1>
 							<p>
 								{/* By using this website you automatically accept that we
@@ -64,7 +68,10 @@ const Projects = () => {
 							</div>
 
 							<Link to={`project-details/${project.id}`}>
-								<button className="group relative mx-auto flex w-2/3 items-center text-textSecondary font-bold rounded-lg border-2 border-textSecondary p-4 ">
+								<button
+									id="project-details"
+									className="group relative mx-auto flex w-2/3 items-center text-textSecondary font-bold rounded-lg border-2 border-textSecondary p-4 "
+								>
 									<span className="relative z-20">More Details</span>
 									<span className="absolute right-3 box-content flex w-1/6 justify-center rounded-md bg-textSecondary duration-300 group-hover:w-1/3">
 										<svg

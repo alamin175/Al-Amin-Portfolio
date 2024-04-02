@@ -4,8 +4,8 @@ const Banner = () => {
 	return (
 		<div className="h-screen">
 			<div
-				className="grid grid-cols-1 flex-row-reverse md:grid-cols-2 items-center mx-auto place-items-center ml-16  mr-16"
-				style={{ height: 'calc(100% - 50px' }}
+				className="grid grid-cols-1 flex-row-reverse md:grid-cols-2 items-center  place-items-center mx-8 md:mx-16  "
+				style={{ height: 'calc(100% - 70px' }}
 			>
 				<div
 					className="order-last md:order-first"

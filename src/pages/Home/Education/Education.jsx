@@ -4,7 +4,7 @@ import { FaGraduationCap } from 'react-icons/fa'
 
 const Education = () => {
 	return (
-		<div className="h-screen mt-20 mb-16 ">
+		<div id="education" className="h-screen mt-20 mb-16 ">
 			<SectionTitle title="Education" />
 			<div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10  mx-auto">
 				<div className="my-4">

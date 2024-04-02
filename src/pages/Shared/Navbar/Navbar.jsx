@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useRef } from 'react'
 import { useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 const NavBar = () => {
 	const [dropDownState, setDropDownState] = useState(false)
@@ -23,30 +24,48 @@ const NavBar = () => {
 	const listing = (
 		<>
 			<li className="group flex  cursor-pointer flex-col">
-				Home
-				<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+				<HashLink
+					smooth
+					to="/#home"
+					scroll={el => el.scrollIntoView({ behavior: 'instant' })}
+				>
+					Home
+				</HashLink>
+				<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
 			</li>
 			<li className="group flex  cursor-pointer flex-col">
-				Services
-				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
-			</li>
-			<li className="group flex  cursor-pointer flex-col">
-				About
+				<HashLink smooth to="/#about">
+					About
+				</HashLink>
 				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
 			</li>
 			<li className="group flex  cursor-pointer flex-col">
-				Contact
-				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+				<HashLink smooth to="/#skills">
+					Skills
+				</HashLink>
+				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
+			</li>
+			<li className="group flex  cursor-pointer flex-col">
+				<HashLink smooth to="/#projects">
+					Projects
+				</HashLink>
+				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
+			</li>
+			<li className="group flex  cursor-pointer flex-col">
+				<HashLink smooth to="/#contacts">
+					Contacts
+				</HashLink>
+				<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-textPrimary text-textPrimary transition-all duration-300 group-hover:w-full"></span>
 			</li>
 		</>
 	)
 
 	return (
-		<nav className="flex items-center justify-between relative px-4 py-2 h-[50px]  text-white ">
-			<div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-				<h2>Al-Amin</h2>
+		<nav className="flex justify-between relative p-4 h-[70px] text-white ">
+			<div className="scale-100 cursor-pointer rounded-2xl px-3  text-xl font-semibold transition-all text-textPrimary duration-200 hover:scale-110">
+				<HashLink to="/#home">Al-Amin</HashLink>
 			</div>
-			<ul className="hidden items-center justify-between gap-10 md:flex">
+			<ul className="hidden items-center justify-between text-textPrimary text-lg font-semibold  gap-10 md:flex">
 				{listing}
 			</ul>
 			<div
@@ -72,7 +91,7 @@ const NavBar = () => {
 					<line x1="4" x2="20" y1="18" y2="18" />{' '}
 				</svg>
 				{dropDownState && (
-					<ul className=" z-10 p-4 gap-2 bg-[#393E46]  absolute right-0 top-11 flex w-[200px] flex-col  rounded-lg   text-base ">
+					<ul className=" z-10 p-4 gap-2 bg-[#393E46]  absolute right-0 top-11 flex w-[200px] flex-col  rounded-lg   text-base font-bold text-textPrimary">
 						{listing}
 					</ul>
 				)}
