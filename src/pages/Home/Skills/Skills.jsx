@@ -14,7 +14,7 @@ import { FaBootstrap, FaHtml5, FaNode, FaReact } from 'react-icons/fa'
 
 const Skills = () => {
 	return (
-		<div id="skills" className=" md:h-screen overflow-hidden">
+		<div id="skills" className=" lg:h-screen overflow-hidden">
 			<SectionTitle title="Skills"></SectionTitle>
 			<div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 ml-10 lg:ml-0 items-center md:place-items-center gap-10">
 				<div>

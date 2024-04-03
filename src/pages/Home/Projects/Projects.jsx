@@ -15,7 +15,7 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div id="projects" className="lg:h-full my-20">
+		<div id="projects" className="lg:h-full mt-16 lg:mt-0">
 			<SectionTitle title="Projects" />
 
 			{/* Project Card */}
