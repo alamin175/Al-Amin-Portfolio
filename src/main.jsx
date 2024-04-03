@@ -5,6 +5,8 @@ import { RouterProvider } from 'react-router-dom'
 import router from './Routes/Routes.jsx'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 
 Aos.init({
 	// Global settings:
@@ -30,6 +32,7 @@ Aos.init({
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<div className="max-w-screen-xl mx-auto bg-textSecondary text-[#ADEFD1FF]">
+			<ToastContainer />
 			<RouterProvider router={router}></RouterProvider>
 		</div>
 	</React.StrictMode>

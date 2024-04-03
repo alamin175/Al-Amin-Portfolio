@@ -61,10 +61,7 @@ const NavBar = () => {
 	)
 
 	return (
-		<nav className="flex justify-between relative p-4 h-[70px] text-white ">
-			<div className="scale-100 cursor-pointer rounded-2xl px-3  text-xl font-semibold transition-all text-textPrimary duration-200 hover:scale-110">
-				<HashLink to="/#home">Al-Amin</HashLink>
-			</div>
+		<nav className="flex justify-end relative p-4 h-[70px] text-white ">
 			<ul className="hidden items-center justify-between text-textPrimary text-lg font-semibold  gap-10 md:flex">
 				{listing}
 			</ul>

@@ -1,6 +1,30 @@
+import { Link } from 'react-router-dom'
 import myImage from '../../../../public/assets/images/user-vector/alamin.png'
+import { FaArrowUp } from 'react-icons/fa'
+import { useEffect, useState } from 'react'
 
 const Banner = () => {
+	const [isVisible, setIsVisible] = useState(false)
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		})
+	}
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsVisible(window.pageYOffset > 0)
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [])
+
 	return (
 		<div className="h-screen">
 			<div
@@ -55,6 +79,19 @@ const Banner = () => {
 						<span className="size-5 bg-pink-500 absolute rounded-full bottom-5 right-9 animate-ping"></span>
 					</div>
 				</div>
+			</div>
+
+			{/* Scroll to top button */}
+			<div>
+				<Link
+					to="#"
+					onClick={scrollToTop}
+					className={`fixed bottom-8 right-8 z-10 ${
+						isVisible ? 'block' : 'hidden'
+					}`}
+				>
+					<FaArrowUp className="text-4xl md:text-5xl bg-white text-textSecondary font-bold p-2 rounded-full hover:bg-textPrimary" />
+				</Link>
 			</div>
 		</div>
 	)

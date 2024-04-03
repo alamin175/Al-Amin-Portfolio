@@ -15,8 +15,8 @@ const About = () => {
 						(MERN Based)
 					</span>
 					. I have also knowledge about Backend technology like Node js
-					(Server), Express js (Server), Mongo DB (Database), React Js
-					(Frontend), Firebase authentication, JWT Token and etc. <br />
+					(Server), Express js, Mongo DB (Database), React Js (Frontend),
+					Firebase authentication, JWT Token and etc. <br />
 				</p>
 				<p className=" mt-4">
 					I'm Also a self learner on all technology. I'm currently studying
@@ -24,7 +24,7 @@ const About = () => {
 					<span className="font-bold font-sans text-textPrimary">
 						Computer Science and Technology(CST)
 					</span>{' '}
-					in the final Year.
+					in the final Year. I'm focusing on programming right now.
 				</p>
 			</div>
 		</div>
