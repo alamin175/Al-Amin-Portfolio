@@ -70,8 +70,8 @@ const Footer = () => {
 					</div>
 					<div className="flex flex-col gap-2">
 						<span className="flex items-center gap-5">
-							<FaLocationDot className="text-4xl" /> North Badda,
-							Gulshan, Dhaka-1212
+							<FaLocationDot className="text-4xl" />
+							Middle Badda,Gulshan,Dhaka-1212
 						</span>
 						<a href="mailto:mdalaminh052@gmail.com">
 							<span className="flex items-center gap-5 hover:text-gray-300">

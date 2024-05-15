@@ -85,8 +85,8 @@ const Banner = () => {
 							src={myImage}
 							alt="Image"
 						/>
-						<span className="size-5 bg-pink-500 absolute rounded-full bottom-5 right-9 border-[3px] border-white"></span>
-						<span className="size-5 bg-pink-500 absolute rounded-full bottom-5 right-9 animate-ping"></span>
+						<span className="size-5 bg-emerald-600 absolute rounded-full bottom-5 right-9 border-[3px] border-white"></span>
+						<span className="size-5 bg-emerald-600 absolute rounded-full bottom-5 right-9 animate-ping"></span>
 					</div>
 				</div>
 			</div>

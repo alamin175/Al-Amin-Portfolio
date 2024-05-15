@@ -5,6 +5,7 @@ import {
 	SiExpress,
 	SiFirebase,
 	SiMongodb,
+	SiNextdotjs,
 	SiTailwindcss,
 } from 'react-icons/si'
 import { TbBrandFramerMotion } from 'react-icons/tb'
@@ -99,6 +100,12 @@ const Skills = () => {
 						<h1 className="flex items-center gap-5 text-2xl">
 							<TbBrandFramerMotion className="text-4xl text-black bg-white" />
 							Framer Motion
+						</h1>
+					</div>
+					<div className="my-4" data-aos="fade-left" data-aos-delay="250">
+						<h1 className="flex items-center gap-5 text-2xl">
+							<SiNextdotjs className="text-4xl text-black bg-white rounded-full" />
+							Next JS
 						</h1>
 					</div>
 				</div>
