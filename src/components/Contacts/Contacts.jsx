@@ -1,15 +1,15 @@
-import { Bounce, toast } from 'react-toastify'
-import emailjs from '@emailjs/browser'
-import { useRef } from 'react'
+import { Bounce, toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contacts = () => {
-	const formValue = useRef()
+	const formValue = useRef();
 	const handleSubmit = async e => {
-		e.preventDefault()
-		const form = e.target
-		const name = form.name.value
-		const email = form.email.value
-		const message = form.message.value
+		e.preventDefault();
+		const form = e.target;
+		const name = form.name.value;
+		const email = form.email.value;
+		const message = form.message.value;
 		if (!name || !email || !message) {
 			toast('Fill up all forms', {
 				position: 'top-center',
@@ -25,27 +25,27 @@ const Contacts = () => {
 					color: '#00203F',
 					fontWeight: 'bold',
 				},
-			})
-			return
+			});
+			return;
 		}
 
-		const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
-		const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-		const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+		const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+		const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+		const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 		try {
 			const res = await emailjs.sendForm(serviceId, templateId, form, {
 				publicKey: publicKey,
-			})
+			});
 			if (res.status == 200) {
-				toast.success('Your message sent successfully')
-				form.reset()
+				toast.success('Your message sent successfully');
+				form.reset();
 			}
 		} catch (error) {
-			toast.error('error occured')
-			console.log(error)
+			toast.error('error occured');
+			console.log(error);
 		}
-	}
+	};
 
 	return (
 		<div className="bg-textSecondary p-6 px-10 w-full md:w-[350px] rounded-xl">
@@ -151,7 +151,7 @@ const Contacts = () => {
 				</button>
 			</form>
 		</div>
-	)
-}
+	);
+};
 
-export default Contacts
+export default Contacts;

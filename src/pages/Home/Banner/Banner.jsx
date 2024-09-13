@@ -17,7 +17,7 @@ const Banner = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			setIsVisible(window.pageYOffset > 0)
+			setIsVisible(window.scrollY > 0)
 		}
 
 		window.addEventListener('scroll', handleScroll)
@@ -96,9 +96,8 @@ const Banner = () => {
 				<Link
 					to="#"
 					onClick={scrollToTop}
-					className={`fixed bottom-8 right-8 z-10 ${
-						isVisible ? 'block' : 'hidden'
-					}`}
+					className={`fixed bottom-8 right-8 z-10 ${isVisible ? 'block' : 'hidden'
+						}`}
 				>
 					<FaArrowUp className="text-4xl md:text-5xl bg-white text-textSecondary font-bold p-2 rounded-full hover:bg-textPrimary" />
 				</Link>

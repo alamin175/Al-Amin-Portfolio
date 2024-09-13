@@ -31,7 +31,7 @@ Aos.init({
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<div className="max-w-screen-xl mx-auto bg-textSecondary text-[#ADEFD1FF]">
+		<div className="max-w-[1750px] mx-auto bg-textSecondary text-[#ADEFD1FF]">
 			<ToastContainer />
 			<RouterProvider router={router}></RouterProvider>
 		</div>

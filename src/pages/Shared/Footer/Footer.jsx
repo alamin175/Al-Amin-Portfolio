@@ -8,7 +8,6 @@ import {
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdAddIcCall, MdEmail } from 'react-icons/md'
 import Contacts from '../../../components/Contacts/Contacts'
-import footerimg from '../../../../public/assets/images/skill-image/footer.jpg'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
 
 const Footer = () => {

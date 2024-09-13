@@ -43,10 +43,30 @@
 		"technology": [
 			"React js, Tanstack Query, Axios, Firebase, Express js, Mongo DB, JWT, React Helmet"
 		]
+	},	
+	{
+		"name": "Slick",
+		"id": 3,
+		"image": "/assets/images/project-4.JPG",
+		"allImage": [
+			"/assets/images/project-4.JPG",
+			"/assets/images/project-4-1.JPG",
+			"/assets/images/project-4-2.JPG",
+			"/assets/images/project-4-3.JPG",
+			"/assets/images/project-4-4.JPG",
+			"/assets/images/project-4-5.JPG"
+		],
+		"title": "This is a static site UI cloned project.",
+		"details": "It was a task to complete the UI cloning. So I cloned the UI with the requirements.",
+		"link": "https://slick-course.vercel.app",
+		"github": "https://github.com/alamin175/slick-course-task",
+		"technology": [
+			"Java Script, React js, Tailwind CSS,"
+		]
 	},
 	{
 		"name": "iRepair",
-		"id": 3,
+		"id": 4,
 		"image": "/assets/images/project-3.JPG",
 		"allImage": [
 			"/assets/images/project-3.JPG",
